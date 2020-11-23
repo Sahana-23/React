@@ -1,0 +1,113 @@
+html{
+  min-height: 100%;
+  
+}
+
+#root{
+  min-height: 100%;
+}
+body{
+  min-height: 100%;
+  background: url('./images/bg.jpg') no-repeat ; 
+  background-size: cover;
+  color:white; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 25%;
+}
+.search-icon{
+  background-color: white;  
+}
+.search-icon:hover,.search-icon:active,.search-icon:focus{
+background-color: white;
+border:none;
+box-shadow: none;
+}
+.input-group>.form-control:focus {
+   z-index: 0;
+   border: none;
+   box-shadow: none;
+}
+
+.temperature{
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.weather-details{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.forecast-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  margin: 0.5em;
+}
+
+.forecast-card {
+  width:45%;
+  flex-shrink: 0;
+  border-radius: 5px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  
+}
+
+.err-message{
+  width:50%;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) { 
+  .search-container {
+    width: 75%;
+  } 
+  .err-message {
+    width: 75%;
+  } 
+}
+
+@media (min-width: 576px) {
+ }
+
+
+@media (min-width: 768px) { 
+  .forecast-card {
+    width:22%;
+  }
+  .forecast-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  .forecast-container::-webkit-scrollbar-track {
+    background:none;
+  }
+  .forecast-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    
+  }
+  .temperature{font-size: 35px;}
+  
+}
+
+
+@media (min-width: 992px) { 
+  .forecast-card {
+    width:15.5%;
+  }
+  .temperature{font-size: 50px;}
+  
+}
+
